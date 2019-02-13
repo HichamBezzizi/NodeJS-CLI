@@ -6,13 +6,13 @@ const verifyEmail = require("email-validator");
 const getRequest = require("axios");
 const readLine = require("readline-sync");
 
-const email = readLine.question("What is your email? " )
+const myEmail = readLine.question("What is your email? " )
 
-if(verifyEmail.validate(email) == true) {
+if(verifyEmail.validate(myEmail) == true) {
 
-    const encoded = encodeURIComponent(email)
+    const encodedEmail = encodeURIComponent(myEmail)
 
-    getRequest.get("https://haveibeenpwned.com/api/v2/breachedaccount/"+encoded,{"headers" : {"user-agent": "Node_CLI tool"}})
+    getRequest.get("https://haveibeenpwned.com/api/v2/breachedaccount/"+encodedEmail,{"headers" : {"user-agent": "Node_CLI tool"}})
     .then(function (response) {
     console.log(response.data);
   })
