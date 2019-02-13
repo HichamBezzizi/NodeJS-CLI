@@ -1,6 +1,8 @@
 {
   "name": "nodejs_cli",
   "version": "1.0.0",
+  "bin": {"nodejs_cli": "./index.js"
+  },
   "description": "first nodejs program",
   "main": "index.js",
   "scripts": {
@@ -21,6 +23,7 @@
     "chalk": "^2.4.2",
     "email-validator": "^2.0.4",
     "figlet": "^1.2.1",
-    "ora": "^3.1.0"
+    "ora": "^3.1.0",
+    "readline-sync": "^1.4.9"
   }
 }
