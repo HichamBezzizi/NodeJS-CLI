@@ -1,0 +1,26 @@
+{
+  "name": "nodejs_cli",
+  "version": "1.0.0",
+  "description": "first nodejs program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HichamBezzizi/NodeJS-CLI.git"
+  },
+  "author": "Hicham Bezzizi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HichamBezzizi/NodeJS-CLI/issues"
+  },
+  "homepage": "https://github.com/HichamBezzizi/NodeJS-CLI#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "email-validator": "^2.0.4",
+    "figlet": "^1.2.1",
+    "ora": "^3.1.0"
+  }
+}
