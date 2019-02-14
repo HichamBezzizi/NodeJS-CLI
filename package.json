@@ -1,7 +1,8 @@
 {
   "name": "nodejs_cli",
   "version": "1.0.0",
-  "bin": {"nodejs_cli": "./index.js"
+  "bin": {
+"nodejs_cli": "./index.js"
   },
   "description": "first nodejs program",
   "main": "index.js",
