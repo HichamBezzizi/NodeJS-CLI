@@ -6,9 +6,9 @@ const verifyEmail = require("email-validator"); // various packages.
 const getRequest = require("axios");            //
 const readLine = require("readline-sync");      // 
 
-const myEmail = readLine.question("What is your email? " ) //makes sure this string is displayed in the terminal whenever you run your CLI tool.
+const myEmail = readLine.question("" ) //makes sure this string is displayed in the terminal whenever you run your CLI tool.
 
-if(verifyEmail.validate(myEmail) == true) {
+if(verifyEmail.validate(myEmail)) {
 
     const encodedEmail = encodeURIComponent(myEmail)  //encodeURIComponent encodes the special characters in myEmail which in this case is the @ character.
                                                      //so instead of hicham_bezzizi@hotmail.com, it encodes as hicham_bezzizi%40hotmail.com.
