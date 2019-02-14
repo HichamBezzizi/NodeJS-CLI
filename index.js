@@ -16,7 +16,7 @@ console.log(process.argv) //this makes sure you can enter the tool name and your
 
 if(verifyEmail.validate(inputEmail)) {
 
-    const encodedEmail = encodeURIComponent(inputEmail)  //encodeURIComponent encodes the special characters in myEmail which in this case is the @ character. So instead of hicham_bezzizi@hotmail.com, it encodes as hicham_bezzizi%40hotmail.com.
+    const encodedEmail = encodeURIComponent(inputEmail)  //encodeURIComponent encodes the special characters of your email which in this case is the @ character. So instead of name@example.com, it encodes as name%40example.com.
     const url = "https://haveibeenpwned.com/api/v2/breachedaccount/"+encodedEmail; //contains the url to the api + your encoded email.
 
 
