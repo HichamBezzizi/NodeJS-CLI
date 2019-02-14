@@ -10,7 +10,9 @@ const chalk = require("chalk");                 //
 const validity = chalk.black.bgGreen.underline  // some styles for my confirmation messages.
 const errorMessage = chalk.black.bgRed.underline; //
 
-const inputEmail = readLine.question("Please enter your email here: " ) //makes sure this string is displayed in the terminal whenever you run your CLI tool.
+const inputEmail = process.argv[2];
+console.log(process.argv) //this makes sure you can enter the tool name and your email on 1 command line.
+//const inputEmail = readLine.question("Please enter your email here: " ) //makes sure this string is displayed in the terminal whenever you run your CLI tool.
 
 if(verifyEmail.validate(inputEmail)) {
 
