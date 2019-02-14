@@ -1,8 +1,8 @@
 {
-  "name": "cli_tool",
+  "name": "cli_tool_breached",
   "version": "1.0.0",
   "bin": {
-    "cli_tool": "./index.js"
+    "cli_tool_breached": "./index.js"
   },
   "description": "first nodejs program",
   "main": "index.js",
